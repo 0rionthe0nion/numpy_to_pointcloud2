@@ -1,4 +1,4 @@
-# k-means-visualization
+# K-means Visualization
 
 ## Overview
 
