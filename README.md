@@ -15,26 +15,33 @@ This project requires that Foxy ROS2 be installed on 20.04 Ubuntu. If you do not
 Download all files and move them into your FOXY ROS2 workspace folder. If you followed the instructions from the link above, move the project into `/ros2_ws/src/`.
 
 To run the main program `numpy_to_pointcloud2_ros2.py`, make sure you have a NumPy array with 3D data points in the form of [x-coordinate, y-coordinate, z-coordinate, cluster number] being published to a topic called `points_array`. Then, run these commands in Ubuntu 20.04:
-``source /opt/ros/foxy/setup.bash
-cd ~/ros2_ws 
-colcon build
-source install/setup.bash
-ros2 run my_pkg turn_points_to_pc2``
+
+`source /opt/ros/foxy/setup.bash`
+
+`cd ~/ros2_ws `
+
+`colcon build`
+
+`source install/setup.bash`
+
+`ros2 run my_pkg turn_points_to_pc2`
 
 To run the test program `numpy_points_generator.py`, run these commands in Ubuntu 20.04:
-``source /opt/ros/foxy/setup.bash
-cd ~/ros2_ws 
-colcon build
-source install/setup.bash
-ros2 run my_pkg print_points_with_k_value``
+- source /opt/ros/foxy/setup.bash
+- cd ~/ros2_ws 
+- colcon build
+- source install/setup.bash
+- ros2 run my_pkg print_points_with_k_value
 
-Running RViz2 proved to be challenging for me; these commands are what I used to get RViz2 working. The topic to subscribe to for point visualization is `point_cloud`.
-``unset LIBGL_ALWAYS_INDIRECT
-export LIBGL_ALWAYS_SOFTWARE=1
-export MESA_GL_VERSION_OVERRIDE=3.3
-export OGRE_RTT_MODE=Copy
-source /opt/ros/foxy/setup.bash
-rviz2``
+Running RViz2 proved to be challenging for me; these commands are what I used to get RViz2 working:
+- unset LIBGL_ALWAYS_INDIRECT
+- export LIBGL_ALWAYS_SOFTWARE=1
+- export MESA_GL_VERSION_OVERRIDE=3.3
+- export OGRE_RTT_MODE=Copy
+- source /opt/ros/foxy/setup.bash
+- rviz2
+
+Add a PointCloud2 display, subscribe to topic `point_cloud` for point visualization, and
 
 
 ## Tech Used
