@@ -28,6 +28,15 @@ colcon build
 source install/setup.bash
 ros2 run my_pkg print_points_with_k_value``
 
+Running RViz2 proved to be challenging for me; these commands are what I used to get RViz2 working. The topic to subscribe to for point visualization is `point_cloud`.
+``unset LIBGL_ALWAYS_INDIRECT
+export LIBGL_ALWAYS_SOFTWARE=1
+export MESA_GL_VERSION_OVERRIDE=3.3
+export OGRE_RTT_MODE=Copy
+source /opt/ros/foxy/setup.bash
+rviz2``
+
+
 ## Tech Used
 - Python
 - Foxy ROS2
@@ -46,5 +55,6 @@ ros2 run my_pkg print_points_with_k_value``
 
 ## What I learned
 - How ROS2 nodes, publishers, and subscribers work together
-- Setting up and running Foxy ROS2 in 20.04 Ubuntu environment
+- Setting up Foxy ROS2 in 20.04 Ubuntu environment
+- Running nodes in 20.04 Ubuntu environment
 - Visualizing PointCloud2 messages in RViz2
