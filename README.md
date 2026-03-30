@@ -27,19 +27,30 @@ To run the main program `numpy_to_pointcloud2_ros2.py`, make sure you have a Num
 `ros2 run my_pkg turn_points_to_pc2`
 
 To run the test program `numpy_points_generator.py`, run these commands in Ubuntu 20.04:
-- source /opt/ros/foxy/setup.bash
-- cd ~/ros2_ws 
-- colcon build
-- source install/setup.bash
-- ros2 run my_pkg print_points_with_k_value
+
+`source /opt/ros/foxy/setup.bash`
+
+`cd ~/ros2_ws`
+
+`colcon build`
+
+`source install/setup.bash`
+
+`ros2 run my_pkg print_points_with_k_value`
 
 Running RViz2 proved to be challenging for me; these commands are what I used to get RViz2 working:
-- unset LIBGL_ALWAYS_INDIRECT
-- export LIBGL_ALWAYS_SOFTWARE=1
-- export MESA_GL_VERSION_OVERRIDE=3.3
-- export OGRE_RTT_MODE=Copy
-- source /opt/ros/foxy/setup.bash
-- rviz2
+
+`unset LIBGL_ALWAYS_INDIRECT`
+
+`export LIBGL_ALWAYS_SOFTWARE=1`
+
+`export MESA_GL_VERSION_OVERRIDE=3.3`
+
+`export OGRE_RTT_MODE=Copy`
+
+`source /opt/ros/foxy/setup.bash`
+
+`rviz2`
 
 Add a PointCloud2 display, subscribe to topic `point_cloud` for point visualization, and
 
