@@ -9,6 +9,9 @@ At the same time, I was learning how ROS2 nodes communicate through publishers a
 
 Initial implementation was generated with AI assistance but was later modified to become compatable with other nodes coded for the larger goal and to better understand ROS2 nodes.
 
+## Running the Project
+This projects requires that Foxy ROS2 be installed on 20.04 Ubuntu. If you do not have Foxy ROS2 installed, please follow the official download instructions here: [https://docs.ros.org/en/foxy/Installation/Alternatives/Ubuntu-Development-Setup.html](url)
+
 ## Tech Used
 - Python
 - Foxy ROS2
