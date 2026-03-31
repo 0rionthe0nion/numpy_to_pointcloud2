@@ -1,4 +1,4 @@
-# NumPy to PointCloud2 (ROS2)
+# NumPy Array to PointCloud2 (ROS2)
 
 ## Overview
 This project was part of a larger goal for the LIDAR team in Triton AI to implement k-means visualization and bounding boxes.
